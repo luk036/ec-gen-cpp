@@ -1,11 +1,11 @@
 #include <fmt/format.h>
-#include <greeter/greeter.h>
+#include <ecgen/greeter.h>
 
-using namespace greeter;
+using namespace ecgen;
 
-Greeter::Greeter(std::string _name) : name(std::move(_name)) {}
+EcGen::EcGen(std::string _name) : name(std::move(_name)) {}
 
-std::string Greeter::greet(LanguageCode lang) const {
+std::string EcGen::greet(LanguageCode lang) const {
   switch (lang) {
     default:
     case LanguageCode::EN:
