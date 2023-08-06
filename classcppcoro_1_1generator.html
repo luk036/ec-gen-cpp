@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>ecgen/greeter.h file | EcGen</title>
+  <title>cppcoro::generator class | EcGen</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
   <link rel="icon" href="favicon-dark.png" type="image/png" />
@@ -49,7 +49,9 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="dir_1118f0e3eb8190ba564eb1b0eee49ae4.html">ecgen</a>/</span>greeter.h <span class="m-thin">file</span>
+          <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="generator_8hpp.html">&lt;cppcoro/generator.hpp&gt;</a></div>
+          <div class="m-doc-template">template&lt;typename T&gt;</div>
+          <span class="m-breadcrumb"><a href="namespacecppcoro.html">cppcoro</a>::<wbr/></span>generator <span class="m-thin">class</span>
         </h1>
         <p><span></span></p>
         <nav class="m-block m-default">
@@ -58,26 +60,66 @@
             <li>
               Reference
               <ul>
-                <li><a href="#namespaces">Namespaces</a></li>
-                <li><a href="#nested-classes">Classes</a></li>
+                <li><a href="#pub-types">Public types</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
               </ul>
             </li>
           </ul>
         </nav>
-        <section id="namespaces">
-          <h2><a href="#namespaces">Namespaces</a></h2>
+        <section id="pub-types">
+          <h2><a href="#pub-types">Public types</a></h2>
           <dl class="m-doc">
-            <dt>namespace <a href="namespaceecgen.html" class="m-doc">ecgen</a></dt>
-            <dd></dd>
+            <dt id="acb32a62be62c620fbff7dae25fa4b710">
+              using <a href="#acb32a62be62c620fbff7dae25fa4b710" class="m-doc-self">promise_type</a> = <a href="classcppcoro_1_1detail_1_1generator__promise.html" class="m-doc">detail::<wbr />generator_promise</a>&lt;T&gt;
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a582bd47da29a24b03091605dd378501b">
+              using <a href="#a582bd47da29a24b03091605dd378501b" class="m-doc-self">iterator</a> = <a href="classcppcoro_1_1detail_1_1generator__iterator.html" class="m-doc">detail::<wbr />generator_iterator</a>&lt;T&gt;
+            </dt>
+            <dd><span></span></dd>
           </dl>
         </section>
-        <section id="nested-classes">
-          <h2><a href="#nested-classes">Classes</a></h2>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
           <dl class="m-doc">
-            <dt>
-              class <a href="classecgen_1_1_ec_gen.html" class="m-doc">ecgen::EcGen</a>
+            <dt id="a0ed9376181e5d982edfd454ac3a56796">
+              <span class="m-doc-wrap-bumper"><a href="#a0ed9376181e5d982edfd454ac3a56796" class="m-doc-self">generator</a>(</span><span class="m-doc-wrap">) <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
-            <dd>A class for saying hello in multiple languages.</dd>
+            <dd><span></span></dd>
+            <dt id="a54b473e87326288a9e85223a74bd473e">
+              <span class="m-doc-wrap-bumper"><a href="#a54b473e87326288a9e85223a74bd473e" class="m-doc-self">generator</a>(</span><span class="m-doc-wrap"><a href="classcppcoro_1_1generator.html" class="m-doc">generator</a>&amp;&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a5ae17b16ab49a8b954a83c8605945861">
+              <span class="m-doc-wrap-bumper"><a href="#a5ae17b16ab49a8b954a83c8605945861" class="m-doc-self">generator</a>(</span><span class="m-doc-wrap">const <a href="classcppcoro_1_1generator.html" class="m-doc">generator</a>&amp; other) <span class="m-label m-flat m-danger">deleted</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a61d57d6096a95df640f3d9d7536cdf23">
+              <span class="m-doc-wrap-bumper"><a href="#a61d57d6096a95df640f3d9d7536cdf23" class="m-doc-self">~generator</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt id="a6e7a9cfdb39f9daa0e4b06b61674cc50">
+              <span class="m-doc-wrap-bumper">auto <a href="#a6e7a9cfdb39f9daa0e4b06b61674cc50" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap"><a href="classcppcoro_1_1generator.html" class="m-doc">generator</a> other) -&gt; <a href="classcppcoro_1_1generator.html" class="m-doc">generator</a>&amp; <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a667230f96a3a2a724181df623404c832">
+              <span class="m-doc-wrap-bumper">auto <a href="#a667230f96a3a2a724181df623404c832" class="m-doc-self">begin</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classcppcoro_1_1generator.html#a582bd47da29a24b03091605dd378501b" class="m-doc">iterator</a></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a5a93382e2f6118efb975f36fc4ff84bf">
+              <span class="m-doc-wrap-bumper">auto <a href="#a5a93382e2f6118efb975f36fc4ff84bf" class="m-doc-self">end</a>(</span><span class="m-doc-wrap">) -&gt; <a href="structcppcoro_1_1detail_1_1generator__sentinel.html" class="m-doc">detail::<wbr />generator_sentinel</a> <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a2219721afecd19cefd79158fa73d1d61">
+              <span class="m-doc-wrap-bumper">void <a href="#a2219721afecd19cefd79158fa73d1d61" class="m-doc-self">swap</a>(</span><span class="m-doc-wrap"><a href="classcppcoro_1_1generator.html" class="m-doc">generator</a>&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd><span></span></dd>
           </dl>
         </section>
       </div>
